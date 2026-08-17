@@ -1,0 +1,16 @@
+{
+  "baseline_type": "rule_based",
+  "rule": "visible \u00d7 (stale \u00d7 log(impr) + slipping \u00d7 log(impr) \u00d7 0.5)",
+  "thresholds": {
+    "visible": "impressions_90d >= 500",
+    "stale": "days_since_last_update >= 180",
+    "slipping": "avg_position > 10 and avg_position > 0"
+  },
+  "base_rate": 0.5421,
+  "total_rows": 30000,
+  "rows_scored": 9165,
+  "precision_at_10": 1.0,
+  "precision_at_20": 0.8,
+  "precision_at_50": 0.64,
+  "precision_at_100": 0.58
+}
