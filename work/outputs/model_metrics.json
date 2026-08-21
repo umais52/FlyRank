@@ -1,0 +1,38 @@
+{
+  "seed": 42,
+  "n_folds": 5,
+  "split": "GroupKFold by client_id",
+  "n_features": 32,
+  "base_rate": 0.5421,
+  "baseline": {
+    "precision_at_10": 1.0,
+    "precision_at_20": 0.8,
+    "precision_at_50": 0.64,
+    "precision_at_100": 0.58,
+    "precision_at_200": 0.565
+  },
+  "logistic_regression": {
+    "auc": 0.675,
+    "precision_at_10": 0.7,
+    "precision_at_20": 0.8,
+    "precision_at_50": 0.86,
+    "precision_at_100": 0.86,
+    "precision_at_200": 0.845
+  },
+  "random_forest": {
+    "auc": 0.6822,
+    "precision_at_10": 0.6,
+    "precision_at_20": 0.65,
+    "precision_at_50": 0.6,
+    "precision_at_100": 0.62,
+    "precision_at_200": 0.555
+  },
+  "xgboost": {
+    "auc": 0.6944,
+    "precision_at_10": 0.9,
+    "precision_at_20": 0.85,
+    "precision_at_50": 0.9,
+    "precision_at_100": 0.84,
+    "precision_at_200": 0.84
+  }
+}
