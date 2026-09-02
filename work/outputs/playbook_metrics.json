@@ -1,0 +1,40 @@
+{
+  "playbook_version": "w07_v1",
+  "model": "XGBoost (n_estimators=200, max_depth=4)",
+  "split": "GroupKFold by client_id, 5 folds",
+  "seed": 42,
+  "n_rows": 30000,
+  "n_clients": 32,
+  "n_features": 32,
+  "base_rate": 0.5421,
+  "oof_auc": 0.6939,
+  "fold_auc_range": [
+    0.605,
+    0.706
+  ],
+  "fold_auc_std": 0.0387,
+  "precision_at_k": {
+    "P@10": 0.8,
+    "P@20": 0.8,
+    "P@50": 0.78,
+    "P@100": 0.75,
+    "P@200": 0.74
+  },
+  "accuracy": 0.6482,
+  "false_positives": 5948,
+  "false_negatives": 4606,
+  "reason_code_counts": {
+    "low_visibility": 13274,
+    "position_slipping": 9148,
+    "visible_only": 7561,
+    "stale_and_slipping": 14,
+    "stale_visible": 3
+  },
+  "action_counts": {
+    "deprioritize": 13274,
+    "optimize_position": 9148,
+    "monitor": 7561,
+    "refresh_and_reposition": 14,
+    "refresh": 3
+  }
+}
